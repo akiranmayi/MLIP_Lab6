@@ -37,5 +37,7 @@ def feature_target_sample(housing_data_sample):
 
 def test_data_split(feature_target_sample):
     return_tuple = data_split(*feature_target_sample)
+
+    assert len(return_tuple) == 4, "The data_split function should return 4 elements (X_train, X_test, y_train, y_test)."
     # TODO test if the length of return_tuple is 4
-    raise NotImplemented
+    # raise NotImplemented
